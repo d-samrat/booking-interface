@@ -1,0 +1,561 @@
+* {
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: 'Inter';
+  src: url('fonts/Inter-Regular.ttf') format('truetype');
+}
+
+
+@font-face {
+  font-family: 'Press Gothic';
+  src: url('fonts/PressGothicPro.ttf') format('truetype');
+}
+
+
+
+.vendithera-text {
+  font-size: 600px; /* Adjust the font size as needed */
+  font-family: 'Press Gothic', 'Arial';
+  text-align: center;
+  position: absolute;
+  top: 20px; /* Adjust position as needed */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  z-index: 10;
+  color: #fff; /* Make text transparent */
+  -webkit-background-clip: text; /* Clip background to text */
+  background: linear-gradient(17deg, #ff0015 29.5%, #9C000D 52.39%, #000 98.75%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent; /* For Safari */
+  letter-spacing: 30px; /* Adjust spacing as needed */
+  /* Use pseudo-element for text shadow */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.rectangle-container {
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  gap: 30px; /* Space between rectangles */
+  margin-bottom: 10px; /* Space below the rectangles */
+  position: absolute;
+  z-index: 2;
+  top: 1300px; /* Adjust the position from the top of the page */
+  left: 38%;
+  transform: translateX(-50%);
+}
+
+
+.rectangle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  z-index: 2;
+  width: 300px; /* Adjust width as needed */
+  height: 100px; /* Adjust height as needed */
+  background-color: #D9D9D9; /* Background color */
+  color: #000000; /* Text color */
+  font-family: 'Inter', Arial;
+  font-weight: bolder;
+  border-radius: 54px; /* Rounded corners */
+  font-size: 48px; /* Adjust font size */
+  border: 8px solid #888; /* Border color */
+}
+
+
+.bob-grad{
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  gap: 30px; /* Space between rectangles */
+  margin-bottom: 10px; /* Space below the rectangles */
+  position: absolute;
+  top: 910px; /* Adjust the position from the top of the page */
+  left: 60%;
+  z-index: 1;
+  transform: translateX(-50%);
+}
+
+
+.bob-rect{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  z-index: 1;
+  width: 2600px; /* Adjust width as needed */
+  height: 600px; /* Adjust height as needed */
+  background: linear-gradient(270deg, rgba(0, 0, 0, 0.00) -0.98%, #000 17.59%); /* Background color */
+  color: #000000; /* Text color */
+  font-family: 'Inter', Arial;
+  font-style: normal;
+  font-weight: bolder;
+  border-radius: 0px; /* Rounded corners */
+  font-size: 38px; /* Adjust font size */
+  border: 0px solid #888; /* Border color */
+}
+
+
+.legend{
+  display: flex;
+  align-items: center;
+  flex-direction: column; /* Center horizontally */
+  gap: 30px; /* Space between rectangles */
+  z-index: 0;
+  white-space: nowrap;
+  margin-bottom: 20px; /* Space below the rectangles */
+  position: absolute;
+  top: 2200px; /* Adjust the position from the top of the page */
+  left: 20%;
+}
+
+
+.legend figure {
+  display: flex;
+  align-items: center; /* Align items vertically */
+  gap: 10px; /* Space between image and caption */
+}
+
+
+.avaboy, .avagirl, .selected, .booked, .special{
+  height:100px;
+  width: 100px;
+  background-size: contain;
+
+}
+
+
+
+.avaboy-caption,
+.avagirl-caption,
+.special-caption,
+.selected-caption,
+.booked-caption {
+  display: inline-block; /* Ensure captions are inline */
+  margin-left: 10px; /* Adjust as needed */
+  vertical-align: center; /* Align vertically with images */
+  font-size: 32px;
+  font-family: 'Inter', 'Arial';
+  font-weight: 700;
+}
+
+
+.header-image1 {
+  max-width:100%;
+  z-index: 0; /* Adjust size to fit the container */
+  margin-top: -250%;
+  margin-left: 600%;
+  height: 450px;
+  width: 890px;
+  flex-shrink: 0;
+  display: block;
+}
+
+.header2-figure{
+  text-align: center;
+  margin-bottom: 3550px; /* Adjust as needed */
+
+}
+
+.header-image2 {
+  max-width: 100%;
+  width: 600px; /* Adjust size to fit the container */
+  height: 360px;
+  flex-shrink: 0;
+  flex-direction: column;
+  display: block; /* Center the image */
+  margin-left:20%;
+  margin-top:45%;
+}
+
+
+.header-image2-caption1 {
+  max-width: 100%;
+  margin-left: 25%;
+  font-family:'Inter', 'Arial';
+  flex-shrink: 0;
+  display:inline-block;
+  white-space: nowrap;
+  font-weight: bold;
+  font-size: 48px; /* Adjust the font size */
+  color: #959595; /* Adjust the text color */
+  margin-top: 20px; /* Space between the image and caption */
+}
+
+
+.header-image2-caption2 {
+  max-width: 100%;
+  margin-left: 25%;
+  font-family:'Inter', 'Arial';
+  flex-shrink: 0;
+  display:inline-block;
+  white-space: nowrap;
+  font-weight: bold;
+  font-size: 48px; /* Adjust the font size */
+  color: #ffffff; /* Adjust the text color */
+  margin-top: 5px; /* Space between the image and caption */
+}
+
+
+.header-image2-caption3 {
+  max-width: 100%;
+  margin-left: 25%;
+  font-family:'Inter', 'Arial';
+  flex-shrink: 0;
+  display:inline-block;
+  white-space: nowrap;
+  font-weight: bold;
+  font-size: 48px; /* Adjust the font size */
+  color: #ffffff; /* Adjust the text color */
+  margin-top: 5px; /* Space between the image and caption */
+}
+
+ 
+
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #000000; /* Changed to black */
+  color: #fff; /* Changed to white */
+  display:flex;
+  justify-content: center;
+  align-items:center;
+  height: 10%;
+  margin: 0;
+  margin-top: 10%;
+  margin-right: 41.5%;
+  padding-bottom: 5%;
+}
+
+.booking-container {
+  border-radius: 200px;
+  background: rgba(107, 107, 107, 0.75); /* Changed to black */
+  padding: 100px 100px;
+  margin: 0%;
+  padding-left: 100px; /* Adjusted padding to maintain alignment */
+  margin-left: 0%; /* Move entire layout 5% to the right */
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1); /* Changed shadow to white */
+  text-align: center;
+  max-width: 3000px;
+  width: 100%;
+  color: #fff; /* Changed to white */
+  display: flex;
+  flex-direction: column; /* Ensure button alignment */
+  align-items: center; /* Center items horizontally */
+}
+
+.row {
+  margin-bottom: 20px; /* Increased gap between rows */
+  display: flex;
+  align-items: center;
+}
+
+.row-name {
+  font-family: 'Inter', Arial;
+  font-weight: bolder;
+  font-size: 26px;
+  margin-top: 0px;
+  margin-right: 50px; /* Adjusted margin-right */
+  margin-left: -80px;
+  width: 100px;
+  text-align: right;
+}
+
+
+.row-A, .row-B, .row-C, .row-D, .row-E, .row-F, .row-G {
+  margin-left: -50px; /* Move rows A to G a bit to the left */
+}
+
+
+.attention-box {
+  background: #FFF;
+  color: #ffffff; /* Text color */
+  box-shadow: 0px -15px 16.9px 0px rgba(41, 232, 186, 0.15);
+  width: 700px;
+  height: 65px;
+  position: relative;
+  flex-shrink: 0;
+  border-radius: 8px;
+  text-align: center;
+  padding: 10px; /* Padding inside the rectangle */
+  border-radius: 25px; /* Rounded corners */
+  margin-bottom: 10px; /* Adjust as needed */
+  margin-left: 2%;
+  margin-top: 8%;
+}
+
+.attention-text {
+  position: absolute;
+  top:30%;
+  bottom: 50%;
+  right:35%;
+  white-space: nowrap;
+  margin-left: 0%;
+  flex-shrink: 0;
+  font-size: 18px;
+  font-weight: 500;
+  font-family: 'Inter', 'Arial';
+  color: #666;
+}
+
+
+
+.seat {
+  max-width: 100%;
+  width: 50px; /* Further increased width */
+  height: 50px; /* Further increased height */
+  border: none;
+  margin-right: 21.5px; /* Increased gap between seats */
+  cursor: pointer;
+  text-align: center;
+  line-height: 52px;
+  font-size: 14px;
+  font-family: 'Inter', Arial;
+  font-weight:600;
+  background-image: url('images/avaboy.png');
+  background-size:contain;
+  background-repeat: no-repeat;
+  border-radius: 5px; /* Ensure the image corners are rounded */
+  color: #9C9C9C; /* Changed to white */
+}
+
+.seat.selected {
+  background-image: url('images/selected.png'); /* Update to reference local image */
+  background-size: contain;
+  max-width: 100%;
+  width: 50px; /* Further increased width */
+  height: 50px;
+  color: #fff; /* Changed to white */
+}
+
+.seat.booked {
+  background-image: url('images/booked.png');
+  cursor: not-allowed;
+  background-size: contain;
+  max-width: 100%;
+  width: 50px; /* Further increased width */
+  height: 50px;
+  color: #cecece; /* Changed to white */
+}
+
+/* Change seat images for specific seats to 'avagirl.png' */
+
+[data-seat="B15"], [data-seat="B16"], [data-seat="B17"], [data-seat="B18"], [data-seat="B19"],
+[data-seat="B20"], [data-seat="B21"], [data-seat="B22"], [data-seat="B23"], [data-seat="B24"],
+[data-seat="B25"], [data-seat="B26"], [data-seat="B27"], [data-seat="B28"],
+[data-seat="C15"], [data-seat="C16"], [data-seat="C17"], [data-seat="C18"], [data-seat="C19"],
+[data-seat="C20"], [data-seat="C21"], [data-seat="C22"], [data-seat="C23"], [data-seat="C24"],
+[data-seat="C25"], [data-seat="C26"], [data-seat="C27"], [data-seat="C28"],
+[data-seat="D15"], [data-seat="D16"], [data-seat="D17"], [data-seat="D18"], [data-seat="D19"],
+[data-seat="D20"], [data-seat="D21"], [data-seat="D22"], [data-seat="D23"], [data-seat="D24"],
+[data-seat="D25"], [data-seat="D26"], [data-seat="D27"], [data-seat="D28"],
+[data-seat="E15"], [data-seat="E16"], [data-seat="E17"], [data-seat="E18"], [data-seat="E19"],
+[data-seat="E20"], [data-seat="E21"], [data-seat="E22"], [data-seat="E23"], [data-seat="E24"],
+[data-seat="E25"], [data-seat="E26"], [data-seat="E27"], [data-seat="E28"],
+[data-seat="F15"], [data-seat="F16"], [data-seat="F17"], [data-seat="F18"], [data-seat="F19"],
+[data-seat="F20"], [data-seat="F21"], [data-seat="F22"], [data-seat="F23"], [data-seat="F24"],
+[data-seat="F25"], [data-seat="F26"], [data-seat="F27"], [data-seat="F28"],
+[data-seat="G15"], [data-seat="G16"], [data-seat="G17"], [data-seat="G18"], [data-seat="G19"],
+[data-seat="G20"], [data-seat="G21"], [data-seat="G22"], [data-seat="G23"], [data-seat="G24"],
+[data-seat="G25"], [data-seat="G26"], [data-seat="G27"], [data-seat="G28"],
+[data-seat="H11"], [data-seat="H12"], [data-seat="H13"], [data-seat="H14"], [data-seat="H15"],
+[data-seat="H16"], [data-seat="H17"], [data-seat="H18"], [data-seat="H19"], [data-seat="H20"],
+[data-seat="I11"], [data-seat="I12"], [data-seat="I13"], [data-seat="I14"], [data-seat="I15"],
+[data-seat="I16"], [data-seat="I17"], [data-seat="I18"], [data-seat="I19"], [data-seat="I20"],
+[data-seat="J11"], [data-seat="J12"], [data-seat="J13"], [data-seat="J14"], [data-seat="J15"],
+[data-seat="J16"], [data-seat="J17"], [data-seat="J18"], [data-seat="J19"], [data-seat="J20"],
+[data-seat="K11"], [data-seat="K12"], [data-seat="K13"], [data-seat="K14"], [data-seat="K15"],
+[data-seat="K16"], [data-seat="K17"], [data-seat="K18"], [data-seat="K19"], [data-seat="K20"],
+[data-seat="L11"], [data-seat="L12"], [data-seat="L13"], [data-seat="L14"], [data-seat="L15"],
+[data-seat="L16"], [data-seat="L17"], [data-seat="L18"], [data-seat="L19"], [data-seat="L20"],
+[data-seat="M11"], [data-seat="M12"], [data-seat="M13"], [data-seat="M14"], [data-seat="M15"],
+[data-seat="M16"], [data-seat="M17"], [data-seat="M18"], [data-seat="M19"], [data-seat="M20"],
+[data-seat="N11"], [data-seat="N12"], [data-seat="N13"], [data-seat="N14"], [data-seat="N15"],
+[data-seat="N16"], [data-seat="N17"], [data-seat="N18"], [data-seat="N19"], [data-seat="N20"],
+[data-seat="O11"], [data-seat="O12"], [data-seat="O13"], [data-seat="O14"], [data-seat="O15"],
+[data-seat="O16"], [data-seat="O17"], [data-seat="O18"], [data-seat="O19"], [data-seat="O20"],
+[data-seat="P15"], [data-seat="P16"], [data-seat="P17"], [data-seat="P18"], [data-seat="P19"],
+[data-seat="P20"], [data-seat="P21"], [data-seat="P22"], [data-seat="P23"], [data-seat="P24"],
+[data-seat="P25"], [data-seat="P26"], [data-seat="P27"], [data-seat="P28"],
+[data-seat="Q15"], [data-seat="Q16"], [data-seat="Q17"], [data-seat="Q18"], [data-seat="Q19"],
+[data-seat="Q20"], [data-seat="Q21"], [data-seat="Q22"], [data-seat="Q23"], [data-seat="Q24"],
+[data-seat="Q25"], [data-seat="Q26"], [data-seat="Q27"], [data-seat="Q28"],
+[data-seat="R15"], [data-seat="R16"], [data-seat="R17"], [data-seat="R18"], [data-seat="R19"],
+[data-seat="R20"], [data-seat="R21"], [data-seat="R22"], [data-seat="R23"], [data-seat="R24"],
+[data-seat="R25"], [data-seat="R26"], [data-seat="R27"], [data-seat="R28"],
+[data-seat="S15"], [data-seat="S16"], [data-seat="S17"], [data-seat="S18"], [data-seat="S19"],
+[data-seat="S20"], [data-seat="S21"], [data-seat="S22"], [data-seat="S23"], [data-seat="S24"],
+[data-seat="S25"], [data-seat="S26"], [data-seat="S27"], [data-seat="S28"],
+[data-seat="T15"], [data-seat="T16"], [data-seat="T17"], [data-seat="T18"], [data-seat="T19"],
+[data-seat="T20"], [data-seat="T21"], [data-seat="T22"], [data-seat="T23"], [data-seat="T24"],
+[data-seat="T25"], [data-seat="T26"], [data-seat="T27"], [data-seat="T28"],
+[data-seat="U15"], [data-seat="U16"], [data-seat="U17"], [data-seat="U18"], [data-seat="U19"],
+[data-seat="U20"], [data-seat="U21"], [data-seat="U22"], [data-seat="U23"], [data-seat="U24"],
+[data-seat="U25"], [data-seat="U26"], [data-seat="U27"], [data-seat="U28"],
+[data-seat="V15"], [data-seat="V16"], [data-seat="V17"], [data-seat="V18"], [data-seat="V19"],
+[data-seat="V20"], [data-seat="V21"], [data-seat="V22"], [data-seat="V23"], [data-seat="V24"],
+[data-seat="V25"], [data-seat="V26"], [data-seat="V27"], [data-seat="V28"],
+[data-seat="W15"], [data-seat="W16"], [data-seat="W17"], [data-seat="W18"], [data-seat="W19"],
+[data-seat="W20"], [data-seat="W21"], [data-seat="W22"], [data-seat="W23"], [data-seat="W24"],
+[data-seat="W25"], [data-seat="W26"], [data-seat="W27"], [data-seat="W28"],
+[data-seat="X15"], [data-seat="X16"], [data-seat="X17"], [data-seat="X18"], [data-seat="X19"],
+[data-seat="X20"], [data-seat="X21"], [data-seat="X22"], [data-seat="X23"], [data-seat="X24"],
+[data-seat="X25"], [data-seat="X26"], [data-seat="X27"], [data-seat="X28"],
+[data-seat="Y15"], [data-seat="Y16"], [data-seat="Y17"], [data-seat="Y18"], [data-seat="Y19"],
+[data-seat="Y20"], [data-seat="Y21"], [data-seat="Y22"], [data-seat="Y23"], [data-seat="Y24"],
+[data-seat="Y25"], [data-seat="Y26"], [data-seat="Y27"], [data-seat="Y28"],
+[data-seat="Z15"], [data-seat="Z16"], [data-seat="Z17"], [data-seat="Z18"], [data-seat="Z19"],
+[data-seat="Z20"], [data-seat="Z21"], [data-seat="Z22"], [data-seat="Z23"], [data-seat="Z24"],
+[data-seat="Z25"], [data-seat="Z26"], [data-seat="Z27"], [data-seat="Z28"],
+[data-seat="AA14"], [data-seat="AA15"], [data-seat="AA16"], [data-seat="AA17"], [data-seat="AA18"],
+[data-seat="AA19"], [data-seat="AA20"], [data-seat="AA21"], [data-seat="AA22"], [data-seat="AA23"],
+[data-seat="AA24"], [data-seat="AA25"], [data-seat="AA26"],
+[data-seat="AB12"], [data-seat="AB13"], [data-seat="AB14"], [data-seat="AB15"], [data-seat="AB16"],
+[data-seat="AB17"], [data-seat="AB18"], [data-seat="AB19"], [data-seat="AB20"], [data-seat="AB21"],
+[data-seat="AB22"] {
+  background-image: url('images/avagirl.png');
+}
+
+[data-seat="A1"], [data-seat="A2"], [data-seat="A3"], [data-seat="A4"], [data-seat="A5"],
+[data-seat="A6"], [data-seat="A7"], [data-seat="A8"], [data-seat="A9"], [data-seat="A10"],
+[data-seat="A11"], [data-seat="A12"], [data-seat="A13"], [data-seat="A14"], [data-seat="A15"], [data-seat="A16"], [data-seat="A17"], [data-seat="A18"], [data-seat="A19"], [data-seat="A20"], [data-seat="A21"], [data-seat="A22"], [data-seat="A23"],
+[data-seat="A24"], [data-seat="A25"], [data-seat="A26"], [data-seat="A27"], [data-seat="A28"],
+[data-seat="A29"], [data-seat="A30"], [data-seat="A31"], [data-seat="A32"], [data-seat="Y1"], [data-seat="Y2"], [data-seat="Y3"], [data-seat="Y4"], [data-seat="Y5"],
+[data-seat="Y6"], [data-seat="Y7"], [data-seat="Y8"], [data-seat="Y9"], [data-seat="Y10"],
+[data-seat="Y11"], [data-seat="Y12"], [data-seat="Y13"], [data-seat="Y14"], [data-seat="Y15"], [data-seat="Y16"], [data-seat="Y17"], [data-seat="Y18"], [data-seat="Y19"],
+[data-seat="Y20"], [data-seat="Y21"], [data-seat="Y22"], [data-seat="Y23"], [data-seat="Y24"],
+[data-seat="Y25"], [data-seat="Y26"], [data-seat="Y27"], [data-seat="Y28"], [data-seat="Z1"], [data-seat="Z2"], [data-seat="Z3"], [data-seat="Z4"], [data-seat="Z5"],
+[data-seat="Z6"], [data-seat="Z7"], [data-seat="Z8"], [data-seat="Z9"], [data-seat="Z10"],
+[data-seat="Z11"], [data-seat="Z12"], [data-seat="Z13"], [data-seat="Z14"], [data-seat="Z15"], [data-seat="Z16"], [data-seat="Z17"], [data-seat="Z18"], [data-seat="Z19"],
+[data-seat="Z20"], [data-seat="Z21"], [data-seat="Z22"], [data-seat="Z23"], [data-seat="Z24"],
+[data-seat="Z25"], [data-seat="Z26"], [data-seat="Z27"], [data-seat="Z28"], [data-seat="O12"], [data-seat="M16"],[data-seat="AA1"], [data-seat="AA2"], [data-seat="AA3"], [data-seat="AA4"], [data-seat="AA5"],
+[data-seat="AA6"], [data-seat="AA7"], [data-seat="AA8"], [data-seat="AA9"], [data-seat="AA10"],
+[data-seat="AA11"], [data-seat="AA12"], [data-seat="AA13"], [data-seat="AA14"], [data-seat="AA15"], [data-seat="AA16"], [data-seat="AA17"], [data-seat="AA18"],
+[data-seat="AA19"], [data-seat="AA20"], [data-seat="AA21"], [data-seat="AA22"], [data-seat="AA23"],
+[data-seat="AA24"], [data-seat="AA25"], [data-seat="AA26"],
+[data-seat="AB12"], [data-seat="AB13"], [data-seat="AB14"], [data-seat="AB15"], [data-seat="AB16"],
+[data-seat="AB17"], [data-seat="AB18"], [data-seat="AB19"], [data-seat="AB20"], [data-seat="AB21"],
+[data-seat="AB22"], [data-seat="AB1"], [data-seat="AB2"], [data-seat="AB3"], [data-seat="AB4"], [data-seat="AB5"],
+[data-seat="AB6"], [data-seat="AB7"], [data-seat="AB8"], [data-seat="AB9"], [data-seat="AB10"],
+[data-seat="AB11"]  { 
+  background-image: url(images/booked.png);
+  color: #cecece;
+}
+
+
+
+
+
+.gap {
+  width: 32px; /* Width of the gap */
+  height: 52px; /* Height of the gap */
+  margin-right: 260px; /* Adjust to position B15 below A19 */
+}
+
+.offset {
+  width: 52px; /* Width of one seat */
+  height: 52px;
+  margin-right: 20px; /* Same gap as seats */
+}
+
+#book-btn {
+  border-radius: 97px;
+  margin-top: 90%;
+  padding: 10px 40px;
+  margin-left: -52%; /* Ensure button is centered horizontally */
+  font-size: 64px;
+  flex-shrink: 0;
+  font-family: 'Inter', 'Arial';
+  font-weight: 600;
+  letter-spacing: 2px;
+  background-color: #3872B7;
+  color: #ffffff; /* Changed to black */
+  stroke: #B4B4B4;
+  border: 12px solid #B4B4B4;
+  width: 800px;
+  height: 200px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#book-btn:hover {
+  background-color: #1A5497; /* Changed hover to a lighter shade */
+  color: #fff; /* Ensure text color remains black */
+}
+
+/* Additional styles to increase the gap after row 'O' */
+.row-O {
+  margin-bottom: 100px; /* Increased gap after row 'O' to indicate walking space */
+}
+
+
+.popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.8);
+  font-family: 'Inter', 'Arial';
+  font-weight: 300;
+  font-size: 100px;
+  color: #fff;
+  padding: 20px;
+  border-radius: 16px;
+  z-index: 1000;
+  display: none;
+}
+
+.popup.show {
+  display: block;
+  animation: fadeInOut 2s ease-in-out forwards;
+}
+
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  90% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+
+#seat-selection-popup {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  font-family: 'Inter', 'Arial';
+  font-weight: 600;
+  padding: 20px; /* Increased padding for better spacing */
+  border-radius: 5px;
+  display: none;
+  font-size: 100px; /* Increased font size */
+  max-width: 80%; /* Limit maximum width for better readability */
+}
+
+#seat-selection-popup.show {
+  display: block;
+}
+
+
